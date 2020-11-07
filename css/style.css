@@ -10,9 +10,41 @@
 }
 */
 
-/*
 #navbar{
-
+	background-color: #1261A0;
+	color:white;
 }
-*/
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 20px;
+}
+
+#navbar a:hover{
+	background-color: #F4BC1C;
+}
+
+
+/*links appear on top of each other if browser size reduced*/
+
+@media screen and (max-width: 500px){
+	#navbar a{
+		float:none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
 
