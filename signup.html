@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/login-style.css">
+</head>
+
+<header>
+</header>
+
+<body>
+    <div class="container" id="signout_div">
+        <div class="login-box">
+            <h2>Sign Up</h2>
+            <input id="firstName_field" type="text" class="field" placeholder="First Name" required>
+            <input id="lastName_field" type="text" class="field" placeholder="Last Name" required>
+            <input id="email_field_signup" type="email" class="field" placeholder="Email" required>
+            <input id="studentNumber_field" type="number" class="field" placeholder="Student Number" required>
+            <input id="university_field" type="text" class="field" placeholder="University" required>                
+            <input id="password_field_signup" type="password" class="field" placeholder="Password" required>
+
+            <button class="submit" onclick="signup()">Create Account</button>
+            <p class="form-text">
+                <a>Already have an account? </a>
+                <a href="#" id="link-login" class="form-link">Sign In!</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome. You're currently logged in. Proceed to Main Page.</p>
+        <button onclick="main()">Main</button>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDUZDlm_qk9hzj1VdtDC06XXRrtya1VjKA",
+            authDomain: "newhacks-c6b0d.firebaseapp.com",
+            databaseURL: "https://newhacks-c6b0d.firebaseio.com",
+            projectId: "newhacks-c6b0d",
+            storageBucket: "newhacks-c6b0d.appspot.com",
+            messagingSenderId: "246220595019",
+            appId: "1:246220595019:web:318286ab99ecfb0c9092ce"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./javascript/jquery.3.5.1.js"></script>
+    <script src="./javascript/bootstrap.min.js"></script>
+    <script src="./javascript/signup.js"></script>
+</body>
+
+</html>
