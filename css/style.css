@@ -71,4 +71,18 @@
 	}
 }
 
+#showcase{
+	min-height: 400px;
+	background:url('../showcase.jpg') no-repeat 0 -300px;
+	background-position: center;
+	text-align: center;
+	color: white;
+}
+
+#showcase h1{
+	font-family: Verdana;
+	margin-top: 200px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
 
