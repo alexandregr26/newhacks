@@ -49,6 +49,14 @@
 	display: inline;
 }
 
+/*Log Out button*/
+#navbar button{
+	float: right;
+	background:#112D4E;
+	color: white;
+	height: 30px;
+}
+
 #navbar a{
 	color: #112D4E;
 	text-decoration: none;
