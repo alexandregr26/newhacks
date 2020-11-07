@@ -64,7 +64,7 @@
 
 /*links appear on top of each other if browser size reduced*/
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
 	#navbar a{
 		float:none;
 		display: block;
@@ -88,3 +88,12 @@
 	margin-bottom: 10px;
 }
 
+footer{
+	font-family: Verdana;
+	padding: 1px;
+	margin-top: 20px;
+	color: #112D4E;
+	font-size: 10px;
+	background-color: #dbe2ef;
+	text-align: center;
+}
