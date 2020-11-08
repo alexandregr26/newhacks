@@ -97,7 +97,7 @@ $(document).ready(function () {
         } else if (studentNumberString == "1234554321") {
             imgCreate.src = "../student.png";
         } else {
-            imgCreate.src = "../student.png";
+            imgCreate.src = "../nouserpic.jpg";
         }
         imgCreate.className = 'students-img';
 

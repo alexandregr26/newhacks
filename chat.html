@@ -7,19 +7,37 @@
     <title>UNIverse</title>
     <!-- CSS file -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylechat.css">
 </head>
 
-<header>
-</header>
-
 <body>
-    <!-- create a form to send message -->
-    <form onsubmit="return sendMessage();">
-        <input id="message" placeholder="Enter message" autocomplete="off">
-        <input type="submit">
-    </form>
+    <!-- Main title/logo-->
+    <header id="main-header">
+        <h1>UNIverse</h1>
+    </header>
 
-    <ul id="messages"></ul>
+
+    <!-- Navigation Bar-->
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#"><button onclick="logout()">Log Out</button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="history" class="container">
+        <ul id="messages"></ul>
+    </div>
+
+    <div id="sending">
+        <form onsubmit="return sendMessage();">
+            <input id="message" placeholder=" New message..." autocomplete="off">
+            <input class="submit" type="submit">
+        </form>
+    </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
