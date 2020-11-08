@@ -158,3 +158,42 @@ footer{
 	background-color: #dbe2ef;
 	text-align: center;
 }
+
+/* Students Data */
+.students-project-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #323232;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+#students-project-list{
+    justify-content: center;
+}
+
+#project-students-item {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#project-students-item .skill-icon{
+    width: 55px;
+}
+
+#project-students-item .skill-icon-ux-ui{
+    width: 80px;
+}
+
+#project-students-item h2{
+    padding-top: 10px;
+    font-size: 20px;
+}

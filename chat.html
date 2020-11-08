@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<header>
+</header>
+
+<body>
+    <!-- create a form to send message -->
+    <form onsubmit="return sendMessage();">
+        <input id="message" placeholder="Enter message" autocomplete="off">
+        <input type="submit">
+    </form>
+
+    <ul id="messages"></ul>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDUZDlm_qk9hzj1VdtDC06XXRrtya1VjKA",
+            authDomain: "newhacks-c6b0d.firebaseapp.com",
+            databaseURL: "https://newhacks-c6b0d.firebaseio.com",
+            projectId: "newhacks-c6b0d",
+            storageBucket: "newhacks-c6b0d.appspot.com",
+            messagingSenderId: "246220595019",
+            appId: "1:246220595019:web:318286ab99ecfb0c9092ce"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./javascript/jquery.3.5.1.js"></script>
+    <script src="./javascript/bootstrap.min.js"></script>
+    <script src="./javascript/chat.js"></script>
+</body>
+
+</html>
