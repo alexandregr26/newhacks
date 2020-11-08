@@ -131,6 +131,23 @@
 	width: 100px;
 }
 
+.box-1{
+	background-color: #112D4E;
+	color: white;
+	border: 3px solid #112D4E;
+	padding: 20px;
+	font-family: Verdana;
+	text-align: center;
+}
+
+.box-1 h1{
+	text-transform: uppercase;
+}
+
+.box-1 h2{
+	font-size: 20px;
+}
+
 /* Footer */
 footer{
 	font-family: Verdana;
