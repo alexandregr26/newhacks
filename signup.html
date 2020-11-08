@@ -18,6 +18,9 @@
     <div class="container" id="signout_div">
         <div class="login-box">
             <h2>Sign Up</h2>
+            <style> img{ height: 200px; width: 200px; border: 2px solid;}</style>
+            <img id="myimg"> <label id="upProgress"></label> <br><br>
+            <button class="submit" id="select">Profile Pic</button>
             <input id="firstName_field" type="text" class="field" placeholder="First Name" required>
             <input id="lastName_field" type="text" class="field" placeholder="Last Name" required>
             <input id="university_field" type="text" class="field" placeholder="University/College/School" required>   
@@ -45,6 +48,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
 
     <script>
         // Your web app's Firebase configuration

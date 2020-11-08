@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container{
 	width:80%;
 	margin:auto;
@@ -7,8 +17,9 @@
 
 #main-header{
 	background-color: #112D4E;
-	height: 80px;
+	height: 90px;
 	margin: 0;
+	text-align: center;
 }
 
 
@@ -19,25 +30,25 @@
 	overflow: hidden;
 	border-radius: 50%;
 	padding: 20px;
-	
-	
 }
 
-
 #main-header h1{
-		font-family: Verdana;
+		height: 30px;
 		font-size: 60 px;
 		color: #F9F7F7;
 		top: 50%;
 		-ms-transform: translateY(50%);
 		transform: translateY(50%);
-		
 }
 
 /* Navigation Bar */
 #navbar{
 	background-color: #DBE2EF;
 	color:white;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
 }
 
 #navbar ul{
@@ -69,7 +80,6 @@
 	text-decoration: none;
 	font-size: 16px;
 	padding: 20px;
-	font-family: Verdana;
 }
 
 #navbar a:hover{
@@ -98,7 +108,6 @@
 }
 
 #showcase h1{
-	font-family: Verdana;
 	margin-top: 200px;
 	font-size: 30px;
 	margin-bottom: 10px;
@@ -107,7 +116,6 @@
 #main{
 	padding: 10px;
 	color: #112d4e;
-	font-family: Verdana;
 	text-align: center;
 	line-height: 1.6em;
 }
@@ -120,7 +128,6 @@
 #boxes .box{
 	text-transform: uppercase;
 	color: #112d4e;
-	font-family: Verdana;
 	font-size: 12px;
 	float: left;
 	text-align: center;
@@ -141,7 +148,6 @@
 	color: white;
 	border: 3px solid #112D4E;
 	padding: 20px;
-	font-family: Verdana;
 	text-align: center;
 }
 
@@ -155,7 +161,6 @@
 
 /* Footer */
 footer{
-	font-family: Verdana;
 	padding: 1px;
 	margin-top: 20px;
 	color: #112D4E;
@@ -172,7 +177,7 @@ footer{
     color: #323232;
     text-transform: uppercase;
     margin: 0;
-    padding: 40px 0 0 0;
+    padding: 40px 0 40px 0;
 }
 
 #students-project-list{
@@ -180,9 +185,11 @@ footer{
 }
 
 #project-students-item {
-    height: 200px;
+	background-color: #112D4E;
+	border-radius: 30px;
+    height: 500px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,15 +197,80 @@ footer{
     text-align: center;
 }
 
-#project-students-item .skill-icon{
-    width: 55px;
-}
-
-#project-students-item .skill-icon-ux-ui{
-    width: 80px;
+#project-students-item .students-img{
+	width: 150px;
+	height: 150px;
+	border-radius: 500px;
 }
 
 #project-students-item h2{
-    padding-top: 10px;
-    font-size: 20px;
+    padding: 10px 0px;
+	font-size: 20px;
+	color: white;
+}
+
+#project-students-item .active{
+    width: 70%;
+    border: none;
+    border-radius: 14px;
+    padding: 0.5rem 1rem;
+    background-color: #00b000;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+	cursor: pointer;
+    transition: .3s;
+    margin-bottom: 22px;
+}
+
+#project-students-item .active:hover{
+    background-color: #27d827;
+    color: white;
+}
+
+#project-students-item .disabled{
+    width: 70%;
+    border: none;
+    border-radius: 14px;
+    padding: 0.5rem 1rem;
+    background-color: darkred;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+	cursor: pointer;
+    transition: .3s;
+    margin-bottom: 22px;
+}
+
+#project-students-item .disabled:hover{
+	background-color: #580000;
+	color: gainsboro;
+}
+
+.imgCircle{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: white; 
+}
+
+footer.footer-area{
+    padding: 8rem 0;
+    background-color: #112D4E;
+}
+
+footer.footer-area .social h5{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+
+footer.footer-area .social a>i{
+    font-size: 33px;
+    padding: 1rem;
+    color: white;
 }

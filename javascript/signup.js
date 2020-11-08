@@ -1,4 +1,5 @@
 const database = firebase.database();
+const storage = firebase.storage();
 
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
@@ -47,9 +48,16 @@ function signup() {
         window.alert("Error : " + errorMessage);
     });
 
+    firebase.storage().ref('users/' + user_studentNumber+'profile.jpg').put(files).then(function () {
+    }).catch(error => {
+        console.log(error.message);
+    })
+
     database.ref('users/' + user_studentNumber).set({
         first_name: user_firstName,
         last_name: user_secondName,
+        email: user_email,
+        student_number: user_studentNumber,
         university: user_university,
         program: user_program,
         year: user_year
@@ -58,4 +66,23 @@ function signup() {
 
 function main() {
     window.location.href = "./index.html";
+}
+
+var ImgUrl;
+var files = [];
+var reader;
+
+document.getElementById("select").onclick = function (e) {
+    var input = document.createElement('input');
+    input.type = 'file';
+
+    input.onchange = e => {
+        files = e.target.files;
+        reader = new FileReader();
+        reader.onload = function () {
+            document.getElementById("myimg").src = reader.result;
+        }
+        reader.readAsDataURL(files[0]);
+    }
+    input.click();
 }
