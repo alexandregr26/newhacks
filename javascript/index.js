@@ -20,8 +20,8 @@ $(document).ready(function () {
         var first_name = snap.child("first_name").val();
         var last_name = snap.child("last_name").val();
         var university = snap.child("university").val();
-        var year;
-        var program;
+        var year = snap.child("year").val();
+        var program = snap.child("program").val();
 
         var newDiv = document.createElement('div');
         newDiv.classList.add('col-lg-3', 'col-md-4', 'col-sm-4', 'col-4');
@@ -30,23 +30,31 @@ $(document).ready(function () {
         newDiv0.id = "project-students-item"
 
         var hh1 = document.createElement('h2');
-        var sectionValueString1 = String(first_name);
+        var sectionValueString1 = String(first_name + " ");
         var newDivText1 = document.createTextNode(sectionValueString1);
         hh1.appendChild(newDivText1);
         
-        var hh2 = document.createElement('h2');
         var sectionValueString2 = String(last_name);
         var newDivText2 = document.createTextNode(sectionValueString2);
-        hh2.appendChild(newDivText2);
+        hh1.appendChild(newDivText2);
 
         var hh3 = document.createElement('h2');
+        var sectionValueStringP = String(program+", ");
+        var newDivTextP = document.createTextNode(sectionValueStringP);
+        hh3.appendChild(newDivTextP);
+
         var sectionValueString3 = String(university);
         var newDivText3 = document.createTextNode(sectionValueString3);
         hh3.appendChild(newDivText3);
 
+        var hh4 = document.createElement('h2');
+        var yearString = String(year);
+        var newDivTextY = document.createTextNode(yearString);
+        hh4.appendChild(newDivTextY);
+
         newDiv0.appendChild(hh1);
-        newDiv0.appendChild(hh2);
         newDiv0.appendChild(hh3);
+        newDiv0.appendChild(hh4);
 
         var newDiv00 = document.createElement('button');
         newDiv00.innerHTML = "CHAT";

@@ -36,6 +36,8 @@ function signup() {
     var user_email = document.getElementById("email_field_signup").value;
     var user_studentNumber = document.getElementById("studentNumber_field").value;
     var user_university = document.getElementById("university_field").value;
+    var user_program = document.getElementById("program_field").value;
+    var user_year = document.getElementById("year_field").value;
     var user_password = document.getElementById("password_field_signup").value;
 
     firebase.auth().createUserWithEmailAndPassword(user_email, user_password).catch(function (error) {
@@ -48,7 +50,9 @@ function signup() {
     database.ref('users/' + user_studentNumber).set({
         first_name: user_firstName,
         last_name: user_secondName,
-        university: user_university
+        university: user_university,
+        program: user_program,
+        year: user_year
     });
 }
 
