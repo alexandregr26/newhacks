@@ -58,12 +58,12 @@ firebase.database().ref("messages").on("child_added", function (snapshot) {
         html += "<li class='away' id='message-" + snapshot.key + "'>";
     }
     // show delete button if message is sent by me
+    html += snapshot.val().sender + ": " + snapshot.val().message + " ";
     if (snapshot.val().sender == myName) {
         html += "<button data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>";
-        html += "Delete";
+        html += "X";
         html += "</button>";
     }
-    html += snapshot.val().sender + ": " + snapshot.val().message;
     html += "</li>";
 
     document.getElementById("messages").innerHTML += html;

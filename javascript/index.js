@@ -91,11 +91,11 @@ $(document).ready(function () {
         //    imgCreate.src = imgUrl;
         //})
         if (studentNumberString == "123456789") {
-            imgCreate.src = "../student.png";
+            imgCreate.src = "../alex.png";
         } else if (studentNumberString == "987654321") {
-            imgCreate.src = "../student.png";
+            imgCreate.src = "../maha.jpg";
         } else if (studentNumberString == "1234554321") {
-            imgCreate.src = "../student.png";
+            imgCreate.src = "../rebecca.jpg";
         } else {
             imgCreate.src = "../nouserpic.jpg";
         }

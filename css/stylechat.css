@@ -154,3 +154,13 @@ ul li{
     position: relative;
     left: 14px;
 }
+
+ul button{
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border-color: red;
+    color: red;
+
+}
